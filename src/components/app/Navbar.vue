@@ -63,8 +63,7 @@ export default {
   },
   methods: {
     logout() {
-      console.log("logout");
-      this.$router.push({ name: "login", message: "logout" });
+      this.$router.push({ name: "login", params: { message: "logout" }});
     }
   },
   beforeDestroy() {
